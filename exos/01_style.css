@@ -2,5 +2,9 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: blue
+    background-color: lightblue;
+}
+
+#times {
+    font-family: 'Times New Roman', Times, serif; 
 }
