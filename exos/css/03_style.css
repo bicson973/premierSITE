@@ -9,6 +9,20 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h1 {
+    /* taille de typo, en px en unités absolues */
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+H3 {
+    font-size: 20px;
+}
+
 h1, h2,h3 {
     text-align: center;
     color: lightslategray;
