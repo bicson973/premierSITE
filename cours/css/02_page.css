@@ -1,0 +1,32 @@
+/* feuille de style pour la page de l'espagne */
+
+body{
+    /* Pour retrouver une image dans un sous-dossier mettre -> ../../ */
+    background-image: url('../../img/concrete-texture.png')
+}
+
+header{
+    background-color:chocolate;
+}
+
+nav{
+    background-color:whitesmoke
+}
+
+main{
+    background-color: #fff;
+    width: 1200px;
+}
+
+footer{
+    background-color:lightgrey
+}
+
+h2{
+    background-color: powderblue;
+}
+
+aside{
+    background-color:whitesmoke
+}
+
