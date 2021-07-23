@@ -9,7 +9,9 @@ font-family: 'Oswald', sans-serif; */
 
 body {
     font-family: 'Oswald', sans-serif;
-    background-color: lightpink ;
+    /* image de fond */
+    /* chemin depuis le fichier style.css; on sort du dossier css puis on rentre dans le dossier img : ../ le chemin pour sortir d'un dossier */
+    background-image: url('../img/concrete-texture.png');
 }
 
 /* les titres du site */
@@ -38,9 +40,6 @@ h2 i{
     font-size: 150%;
 }
 
-blockquote{
-    font-family: 'Lemonada', cursive;
-}
 h3 {
     font-size: 22px;
     color:#2c3e50;
@@ -51,4 +50,14 @@ h4{
     text-align: center;
 }
 
+blockquote{
+    font-family: 'Lemonada', cursive;
+    font-size: 120%;
+}
+
+blockquote i {
+    font-size: 350%;
+    color: #6acafc;
+    vertical-align: middle;
+}
 
