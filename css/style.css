@@ -1,3 +1,35 @@
+@charset "UTF-8";
+
+/* reset simple  */
+/* l'étoile signifie tout all */
+
+/* Sinon on peut utiliser le reset d'eric mayer qui se touve à cette adresse : https://meyerweb.com/eric/tools/css/reset/ */
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Fin du reset simple */
+
 /* les styles pour le premier site */
 
 /* les typos google font utilisées dans le site */
@@ -61,3 +93,42 @@ blockquote i {
     vertical-align: middle;
 }
 
+/* A complété position */
+
+/* header dans la page index */
+header{
+    height: 175px;
+    background-color: #719bc5; 
+}
+
+/* Dans le header, les trois zones suivantes flottent toutes les trois à gauche elles int une largeur en %, donc une largeur reatives à l'élément parent donc header */
+
+/* La propriété float sert a casser le flux du html  */
+#logo {
+    /* La boite */
+    width: 25%;
+    float: left;
+    /* marge intérieur de l'élément (padding = rembourrage) */
+    padding: 15px;
+    /* L'aspect de la boite */
+    background-color: #719bc5;
+    /* Le texte */
+    text-align: center; 
+}
+
+#slogan {
+    width: 50%;
+    float: left;
+    background-color: #719bc5; 
+}
+
+#social {
+    width: 25%;
+    float: left;
+    background-color: #719bc5; 
+}
+
+/* La classe clear pour rétablir le flux */
+.clear{
+    clear: both;
+}
