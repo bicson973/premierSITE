@@ -182,7 +182,7 @@ nav a:hover {
 /* Les zones principales */
 
 main {
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
 
     background-color:rgb(178, 178, 178, 0.178)
@@ -196,8 +196,25 @@ aside {
     background-color: #a6d6c3; 
 }
 
+#Accueil {
+    height: 70%;
+    float: left;
+}
 
+section {
+    margin-top: 50px;
+    padding: 20px;
+}
 
+footer {
+    height: 50px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2980b9;
+
+    text-align: center;
+    color: #fff;
+}
 /* La classe clear pour rétablir le flux */
 .clear {
     clear: both;
