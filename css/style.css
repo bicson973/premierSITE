@@ -47,7 +47,7 @@ body {
 }
 
 /* les titres du site */
-h1{
+h1 {
     font-family: 'Anton', sans-serif;
     /* taille de typo */
     font-size: 40px;
@@ -57,7 +57,7 @@ h1{
     color: #2980b9;
 }
 
-h2{
+h2 {
     font-size: 35px;
     color: #2c3e50;
     /* épaisseur des caractères */
@@ -68,7 +68,7 @@ h2{
 
 /* taille de l'icone dans le h2 */
 /* i enfant de h2 ; l'icone sera 150% plus grande que la taille d'origine */
-h2 i{ 
+h2 i { 
     font-size: 150%;
 }
 
@@ -78,11 +78,11 @@ h3 {
     text-shadow: 1px 1px 2px #aaa;
 }
 
-h4{
+h4 {
     text-align: center;
 }
 
-blockquote{
+blockquote {
     font-family: 'Lemonada', cursive;
     font-size: 120%;
 }
@@ -96,7 +96,7 @@ blockquote i {
 /* A complété position */
 
 /* header dans la page index */
-header{
+header {
     height: 175px;
     background-color: #719bc5; 
 
@@ -106,14 +106,14 @@ header{
 
 /* La propriété float sert a casser le flux du html  */
 #logo {
-    /* La boite */
+    /* 1 La boite */
     width: 25%;
     float: left;
-    /* marge intérieur de l'élément (padding = rembourrage) */
+    /* 2 marge intérieur de l'élément (padding = rembourrage) */
     padding: 15px;
-    /* L'aspect de la boite */
+    /* 3 L'aspect de la boite */
     background-color: #719bc5;
-    /* Le texte */
+    /* 4 Le texte */
     text-align: center; 
 }
 
@@ -130,7 +130,8 @@ header{
     background-color: #719bc5; 
 }
 
-#social i{
+/* ici on cible un element i dont le parent à l'id "social" */
+#social i {
     /* Je change la nature de l'élément i qui est de type inline en un élément de type block */
     display: block;
     padding: 15px 30px 0 0; 
@@ -138,13 +139,67 @@ header{
     text-align: right;
 }
 
-header a{
+header a {
     text-decoration: none;
     color: #10828c;
 }
 
+/* La nav, la navigation  */
+nav {
+    /* 1 taille de la boite  */
+    height: 70px;
+    padding: 15px;
+    /* 2 style de la boite  */
+    background-color: #2980b9;
+    border-bottom: 8px solid #6acafc;
+    /* 3 position du texte  */
+    text-align: center;
+}
+
+/* Lien qui sont dans la nav  */
+nav a {
+    margin: 10px;
+    padding: 2px 10px;
+
+    background-color:#6acafc;
+    border: 2px solid #fff;
+    /* arrondi des angles des bordures  */
+    border-radius: 10px 0;
+
+    font-family: Geneva, Tahoma, sans-serif;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 14px;
+    /* transition sur la nav a, marche avec le a :hover */
+    transition: 0.5s;
+}
+    /* a :hover une pseudo-class un effet au survol du curseur */
+nav a:hover {
+    background-color: #a6d6c3;
+    color:#fff;
+}
+
+/* Les zones principales */
+
+main {
+    width: 1000px;
+    margin: 0 auto;
+
+    background-color:rgb(178, 178, 178, 0.178)
+}
+
+aside {
+    height: 250px;
+    width: 30%;
+    float: left;
+
+    background-color: #a6d6c3; 
+}
+
+
+
 /* La classe clear pour rétablir le flux */
-.clear{
+.clear {
     clear: both;
 }
 
