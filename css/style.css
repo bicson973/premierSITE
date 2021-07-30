@@ -46,6 +46,11 @@ body {
     background-image: url('../img/concrete-texture.png');
 }
 
+.clear {
+    clear: both;
+} 
+/* La classe clear sert à rétablir le flux */
+
 /* les titres du site */
 h1 {
     font-family: 'Anton', sans-serif;
@@ -314,16 +319,99 @@ button {
     border-radius: 10px;
     font-size: 120%;
 }
-/* on ne cible que cette image, on la trouve par son chemin dans le ficheier html */
+
 img[src="img/toureiffel.jpg"] {
-    /* Je change la nature de l'élément inline en block pour lui appliquer la margin automatique */
+/* on ne cible que cette image, on la trouve par son chemin dans le ficheier html */
     display: block;
+    /* Je change la nature de l'élément inline en block pour lui appliquer la margin automatique */
     padding: 20px;
     margin: auto;
     background-color: #fff;
 }
 
-/* La classe clear pour rétablir le flux */
-.clear {
-    clear: both;
-} 
+.au-centre {
+    text-align: center;
+}
+
+.img-golden {
+
+    margin: 20px;
+    border: 5px solid #fff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+    /* la durée de l'animation qui fonctionne avec le :hover des deux autres classes */
+}
+
+.img-golden:hover {
+    transition: rotate(-7deg);
+    border: 15px solid #fff;
+}
+
+.rotation-360:hover {
+    transform: rotate(-360deg);
+}
+
+/* Fin des pages images */
+
+/* Début Page Tableau */
+
+.tableau table, .tableau td {
+    border: 2px solid #205D67;
+
+}
+
+.tableau table {
+
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tableau td {
+    
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tableau thead {
+
+    background: #d0e3fa;
+    border: 5px solid #6495ed;
+    text-align: center;
+}
+
+.tableau caption {
+    height: 50px;
+    padding-left: 5px;
+
+    background: #d0e3fa;
+    border: 1px solid #6495ed;
+
+    font-size: 25px;
+    text-align: left;
+    color: #6495ed;
+}
+
+/* La page des listes */
+
+ul.fruit {
+    list-style: none;
+}
+/* pour voir tous les types de puces faites CTRL + Espace */
+
+ul.fruit li {
+    display: inline;
+    margin: 15px;
+}
+/* Les éléments li sont block par défaut et on change leur nature en élément inline */
+
+Li .far {
+    font-size: 90%;
+    color: #2D5C7F;
+}
+
+li .far:hover {
+    font-size: 150%;
+    color: red;
+}
