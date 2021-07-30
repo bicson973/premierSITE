@@ -415,3 +415,63 @@ li .far:hover {
     font-size: 150%;
     color: red;
 }
+
+ol.fruit-2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-type: upper-roman;
+}
+
+.imbriquee, .imbriquee ul {
+    padding-left: 50px;
+  
+}
+
+.imbriquee {
+    cursor: pointer;
+}
+
+.imbriquee ul {
+    display: none;
+}
+
+.affiche:hover ul {
+    display: block;
+}
+
+.imbriquee li ul li:hover {
+    display: inline;
+    font-size: 150%;
+    background-color: #6acafc;
+    box-shadow: 5px 10px 10px gray;
+    transition: 1s;
+}
+/* ici nous ciblons les li (au survol de la souris) qui sont dans une ul imbriquée dans des li eux-mêmes enfants d'un élément qui a la classe "imbriquee" */
+
+/* Fin liste */
+
+/* page liens */
+.ancre {
+    text-align: center;
+    padding: 100px;
+}
+
+.ancre a {
+    margin: 8px;
+    padding: 5px 10px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 3px black;
+    color: white;
+    text-decoration: none;
+    /* enleve le soulignement */
+    font-size: 20px;
+    /* Augmente la taille */
+}
+
+ancre a:hover {
+    box-shadow: none;
+
+    text-shadow: 1px 5px 5px gray;
+    transition-duration: 0.5s;
+}
