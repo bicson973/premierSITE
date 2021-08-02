@@ -103,52 +103,52 @@
 			<a href="#" onclick="window.print()">imprimer la page </a>
 
 		<section id="menu">
-		<nav>
+			<h2>Une nav simple</h2>
+			<nav>
 			<!-- ul>li*4>a = raccourcie -->
-			<ul>
-				<li><a href="#"></a>Accueil</li>
-				<li><a href="#"></a>Parcours</li>
-				<li><a href="#"></a>Réalisations</li>
-				<li><a href="#"></a>Contact</li>
-			</ul>
-
-		</nav>
+				<ul>
+					<li><a href="#"></a>Accueil</li>
+					<li><a href="#"></a>Parcours</li>
+					<li><a href="#"></a>Réalisations</li>
+					<li><a href="#"></a>Contact</li>
+				</ul>
+			</nav>
 		</section>
-		<section id="menu-deroulant"></section>
-		<nav>
-			<!-- ul>li*4>a = raccourcie -->
-			<!-- ul ne peut pas être un enfant de ul -->
-			<ul>
+		<section id="menu-deroulant">
+			<h2>Un menu déroulant</h2>
+			<nav>
+				<ul class="niveau-1">
 				<li><a href="#" title="Accueil">Accueil</a></li>
-				<li>
+				<li class="sous-menu">
 					<a href="#" title="Formation">Formation</a>
-					<ul>
+					<ul class="niveau-2">
 						<li><a href="#" title="Etudiant">Etudiant</a></li>
 						<li><a href="#" title="Emploi du temps">Emploi du temps</a></li>
 						<li><a href="#" title="Recherche d'emploi">Recherche d'emploi</a></li>
 						<li><a href="#" title="Documents">Documents</a></li>
+						<!-- ul>li*4>a = raccourcie -->
+						<!-- ul ne peut pas être un enfant de ul -->
 					</ul>
 				</li>
 				<li><a href="#" title="Infomations">Informations</a></li>
-				<li>
+				<li class="sous-menu">
 					<a href="#" title="Cours">Cours</a>
-					<ul>
-						<li><a href="#" title="Internet">Internet</a></li>
-						<li><a href="#" title="HTML - CSS">HTML - CSS</a></li>
-						<li><a href="#" title="CMS">CMS</a></li>
-						<li><a href="#" title="Stats">Stats</a></li>
-						<li><a href="#" title="Réseaux">Réseaux</a></li>
-						<li><a href="#" title="Référencement">Référencement</a></li>
-						<li><a href="#" title="Marketing">Marketing</a></li>
-						<li><a href="#" title="CDC">CDC</a></li>
-						<li><a href="#" title="Photoshop">Photoshop</a></li>
-					</ul>
-				</li>
+						<ul class="niveau-2">
+							<li><a href="#" title="Internet">Internet</a></li>
+							<li><a href="#" title="HTML - CSS">HTML - CSS</a></li>
+							<li><a href="#" title="CMS">CMS</a></li>
+							<li><a href="#" title="Stats">Stats</a></li>
+							<li><a href="#" title="Réseaux">Réseaux</a></li>
+							<li><a href="#" title="Référencement">Référencement</a></li>
+							<li><a href="#" title="Marketing">Marketing</a></li>
+							<li><a href="#" title="Cahier des charges">Cahier des charges</a></li>
+							<li><a href="#" title="Photoshop">Photoshop</a></li>
+						</ul>
+					</li>
 				<li><a href="#" title="Mon CV">Mon CV</a></li>
 			</ul>
-
-		</nav>
-
+			</nav>
+		</section>
 		</main>
 		<!-- fin main -->
 
