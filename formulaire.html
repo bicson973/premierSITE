@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>	
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche. Cette balise, parmis d'autres sera utile au referencement naturel -->
+		<meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021">
+		<!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
+		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique">
+		<!-- l'auteur de la page -->
+		<meta name="author" content="Bicson Saint germain">
+		<script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
+		<title>Mon premier site en HTML 5 et CSS 3 - Formulaire</title>
+		<!-- les google fonts anton, Lemonada,Oswald -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
+		<!-- feuille style du site -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+    <body>
+    <!-- en-tête de la page -->
+		<header>
+            <div id="logo"> 
+                <!-- Le bouton et le lien vers l'ancre #logo -->
+                <a href="#logo">
+                    <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo html 5 et CSS 3">
+            </div>
+            <div id="slogan">
+                <a href="index.html">
+                <h1>Mon premier site en HTML 5 et CSS 3</h1>
+            </a>
+            </div>
+            <div id="social">
+                <a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="" target="_blank"><i class="fab fa-instagre"></i></a>
+                <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            </div>
+            <div class="clear"></div>
+            </header>
+            <!-- fin header -->
+            <!-- navigation principale -->	
+            <nav>
+                <div>
+                    <!-- zone du men avec des liens simples pour faire notre menu -->
+                    <a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
+                    <a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
+                    <a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
+                    <a href="image.html" title="HTML 5 CSS 3 - Image">Image</a>
+                    <a href="position.html" title="HTML 5 CSS 3 - Position ">Position</a>
+                    <a href="zoning.html" title="HTML 5 CSS 3 - Zoning">Zoning</a>
+                    <a href="tableau.html" title="HTML 5 CSS 3 - Tableau">Tableau</a>
+                    <a href="liste.html" title="HTML 5 CSS 3 - Liste">Liste</a>
+                    <a href="lien.html" title="HTML 5 CSS 3 - Lien">Lien</a>
+                    <a href="formulaire.html" title="HTML 5 CSS 3 - Formulaire" class="active">Formulaire</a>
+                    <a href="multimedia.html" title="HTML 5 CSS 3 - Multimédia">Multimédia</a>
+                    <a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
+                    <a href="récapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
+                </div>
+            </nav>
+            <!-- fin nav -->
+            <!-- Contenu principal -->
+            <main>
+                <section>
+                    <h2>Formulaire - <i class="fas fa-file-contract"></i></h2>
+                    <!-- Form = la balise d'un formulaire : tout les champs d'un formulaire sont dans cette balise -->
+                    <!-- Methode pour faire circuler les informations GET ou POST -->
+                    <!-- Action = Url de destination -->
+                    <!-- enctype = multipart/form data : autre attribut important quand on envoie un fichier -->
+                    <form action="inscription.php" method="POST">
+                        <!-- Label = étiquette du formulaire, input = champs du formulaire de, type text -->
+                        <!-- Name est indispensable en PHP, id indispensable en JS -->
+                        <!-- required = champs requis obligatoire -->
+                        <label for="pseudo">choisissez un pseudo *</label>
+                        <input type="text" name="pseudo" id="pseudo" required>
+                        <br>
+
+                        <label for="prenom">prénom</label>
+                        <input type="text" name="prenom" id="prenom">
+                        <br>
+
+                        <label for="nom">Nom *</label>
+                        <input type="text" name="nom" id="nom" required>
+                        <br>
+
+                        <label for="password">choisissez un mot de passe</label>
+                        <input type="text" name="password" id="password" required>
+                        <br>
+
+                        <label for="email">courriel *</label>
+                        <input type="email" name="email" id="email" required>
+                        <br>
+
+                        <p>Quels fruits aimez-vous ?</p>
+
+                        <Label for="orange">Orange</Label>
+                        <input type="checkbox" name="orange" id="orange">
+
+                        <Label for="fraise">Fraise</Label>
+                        <input type="checkbox" name="fraise" id="fraise">
+
+                        <Label for="kiwi">Kiwi</Label>
+                        <input type="checkbox" name="kiwi" id="kiwi">
+
+                        <Label for="pomme">Pomme</Label>
+                        <input type="checkbox" name="pomme" id="pomme">
+
+                        <Label for="tous">J'aime tous les fruits</Label>
+                        <input type="checkbox" name="tous" id="tous" checked>
+
+                        <p>Si vous deviez sauver un légume de la destruction : lequel ? </p>
+
+                        <select name="legume" id="legume">
+                            <option value="">choisissez un légume</option>
+                            <option value="poireau">Poireau</option>
+                            <option value="choux de bruxelles">Choux de bruxelles</option>
+                            <option value="celeri">Celerie</option>
+                        </select>
+
+                        <label for="remarque">Une remarque ?</label>
+                        <textarea name="remarque" id="remarque" cols="50" rows="5"></textarea>
+
+                        <br>
+                        <input type="reset" name="annuler" value="annuler">
+                        <input type="submit" name="envoyer" value="envoyer">
+                    </form>
+                </section>
+
+                <section>
+                   <p><a href="file:///Users/Bmaze/Documents/GitHub/premierSITE/exos/05_Formulaire.html" target="_blank">Un autre formulaire</a></p>
+                </section>
+            
+            </main>
+            <!-- fin main -->
+            <!-- pied de page -->
+		<footer>
+			<p>&copy; L'agence Suresnes - 2021 </p>
+		</footer> 
+		<!-- fin footer -->
+    
+    </body>
+</html>

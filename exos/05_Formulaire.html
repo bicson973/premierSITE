@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Un Formulaire</title>
+        <style>
+            body {
+                background-color: cadetblue;
+            }
+            /* permet d'avoir le contenu au centre */
+            .wrapper {
+                width: 1000px;
+                margin: 0 auto;
+                background-color: whitesmoke;
+            }
+
+            h1 {
+                margin: 0 auto;
+                padding: 30px;
+                margin: 50px;
+                width: 80%;
+                text-align: center;
+
+
+            }
+
+            form {
+                padding: 20px;
+            }
+
+            fieldset {
+                margin: 20px;
+                border-left: 10px solid rosybrown;
+                border-top: none;
+                border-right: none;
+                border-bottom: none;
+            }
+            
+            legend {
+                font-weight: bold;
+                color: rgb(0, 0, 0);
+            }
+            
+            input {
+                margin-right: 20px;
+            }
+  
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Identité</legend>
+                    <label for="nom">Nom *</label>
+                    <input type="text" name="nom" id="nom" placeholder="nom" required>
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre adresse postale</legend>
+                    <label for="adresse">Adresse</label>
+                    <input type="text" name="adresse" id="adresse" placeholder="adresse" required>
+
+                    <label for="code postale">Code postale</label>
+                    <input type="text" name="code postale" id="code postale" placeholder="code postale" required>
+
+                    <label for="ville">Ville</label>
+                    <input type="text" name="ville" id="ville" placeholder="ville" id="ville" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre email</legend>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Sexe</legend>
+                    <label for="homme">Homme</label>
+                    <input type="radio" name="sexe" id="homme" value="homme" required>
+
+                    <label for="femme">Femme</label>
+                    <input type="radio" name="sexe" id="femme" value="femme" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Avez-vous du matériel ?</legend>
+                    <Label for="j'ai des aiguilles">J'ai des aiguilles</Label>
+                    <input type="checkbox" name="matériel" id="aiguilles" value="aiguilles">
+
+                    <Label for="J'ai de la laine">J'ai de la laine</Label>
+                    <input type="checkbox" name="matériel" id="laine" value="laine">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tricotez-vous ?</legend>
+                    <Label for="niveau-select">Votre usage du tricot</Label>
+                    <select name="niveau" id="niveau-select">
+                        <option value="">-- choisissez votre niveau en tricot --</option>
+                        <option value="Jamais">Jamais</option>
+                        <option value="longtemps">Il y a longtemps</option>
+                        <option value="parfois">parfois</option>
+                        <option value="Toujours">Tous les jours</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Votre commentaire</legend>
+                    <Label for="message">Redigez un message</Label>
+                    <br>
+                    <textarea name="message" id="message" cols="50" rows="8" placeholder="dites-nous en un peu plus si vous le souhaitez..."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inscrivez-vous en envoyant le formulaire</legend>
+                    <input type="submit" name="inscription" value="Inscrivez-vous">
+                    <input type="reset" name="effacer" value="Effacer">
+                    <small>obligatoire *</small>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
