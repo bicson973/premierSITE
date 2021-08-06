@@ -46,6 +46,7 @@ body {
     background-image: url('../img/concrete-texture.png');
 }
 
+/* il est toujours utile de placer une classe clear pour rétablir si on, fait flotter les éléments avant */
 .clear {
     clear: both;
 } 
@@ -640,3 +641,76 @@ iframe[allowfullscreen] {
     font-size: 120%;
     text-align: center;
 }
+
+/* Page des zonings */
+
+/* pour le zoning-1 */
+
+#zoning-1 {
+    width: 800px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#zoning-1 header {
+    height: 70px;
+    background-color: #F7F39A;
+}
+
+#zoning-1 aside {
+    height: 525px;
+    width: 20%;
+    float: left;
+    background-color: #A3DE83;
+}
+
+#zoning-1 section {
+    height: 525px;
+    width: 80%;
+    float: left;
+    margin: auto;
+    padding: 0;
+    
+    background-color: #4dc40d;
+}
+
+/* pour le zoning-2 */
+
+#zoning-2 {
+    width: 400px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+#zoning-2 header{
+    float: left;
+    /* taille en largeur de l'élément */
+    /* width: 500px; */
+    /* taille en hauteur de l'élément */
+    height: 60px;
+    /* Couleur de fond de l'élément */
+    background-color: #ff69b4;
+    /* Position du texte de l'élément */
+    margin: auto;
+}
+
+#zoning-2 aside{
+    float: left;
+    width: 100px;
+    height: 500px;
+    background-color: #808000;
+    box-sizing: border-box;
+}
+ 
+#zoning-2 section{
+    float: left;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    padding-left: 10px;
+    background-color: #ffa500;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,45 @@
+body {
+    background-color: #7ba05d;
+}
+
+main{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: rgb(255, 255, 255);  */
+}
+
+header{
+    float: left;
+    /* taille en largeur de l'élément */
+    width: 1200px;
+    /* taille en hauteur de l'élément */
+    height: 150px;
+    /* Couleur de fond de l'élément */
+    background-color: #ffc0cb;
+    /* Position du texte de l'élément */
+    text-align: center;
+}
+
+aside{
+    float: left;
+    width: 200px;
+    min-height: 500px;
+    background-color: #7ff798;
+    box-sizing: border-box;
+    text-align: center;
+}
+ 
+section{
+    float: left;
+    width: 800px;
+    height: 500px;
+    padding-left: 10px;
+    background-color: #54f5cb;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+
+.clear {
+    clear: both;
+}
