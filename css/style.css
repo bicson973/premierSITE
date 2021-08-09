@@ -307,8 +307,6 @@ button {
     background: #000 url('../img/fond.jpg') no-repeat;
     /* l'image s'adapte à la largeur et hauteur du parent */
     background-size: cover;
-    
-
 }
 
 .img-fond p {
