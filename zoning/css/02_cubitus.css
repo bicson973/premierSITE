@@ -1,0 +1,39 @@
+/* le cubitus 2 */
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+}
+
+.rose {
+    background-color: rgb(93, 82, 248);
+}
+
+.corail {
+    background-color: rgb(1, 141, 43);
+}
+
+.c1, .c2 {
+    /* height: 200px;
+    width: 200px;
+    margin: 5px;
+    float: left;
+
+    border-radius: 10% 5% 40% 0%;
+    border: 1px solid white;
+
+    text-align: center; */
+
+    height: 10em;
+    width: 10em;
+    float: left;
+    margin: 5px;
+
+    border: 0.2em solid rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10%
+}
+
+.clear {
+    clear: both;
+}

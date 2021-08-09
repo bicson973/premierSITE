@@ -1,0 +1,39 @@
+main {
+    width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-image: url(../../img/concrete-texture.png);
+}
+
+section {
+    width: 50%;
+    float: left;
+    min-height: 400px;
+}
+
+.gauche {
+    
+    background-color:aqua;
+ 
+
+}
+
+.droite {
+ 
+    background-color:lightcoral;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    width: 1200px;
+    background-color: greenyellow;
+
+}
+
+
