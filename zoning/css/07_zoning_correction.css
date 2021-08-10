@@ -47,26 +47,71 @@ table {
 	border-spacing: 0;
 }
 
-/* fin reset eric mayer */
+/* fin reset  */
 
-body{
-    background-color: lightslategrey;
+/* Zoning 7 - Bicson */
+
+body {
+    background-color: #eee8aa;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
 }
 
-h1{
-    background-color: salmon;
+h1, p {
+    margin: 0;
 }
 
-h2{
-    background-color: seagreen;
+#zoning-7 {
+    width: 1000px;
+    margin: auto;
+    background-color: rgb(196, 31, 59);
 }
 
-h3{
-    background-color: silver;
+#zoning-7 header {
+    height: 60px;
+    background-color: #40a497;
 }
 
-p{
-    background-color: whitesmoke;
+#zoning-7 nav {
+    height: 30px;
+    background-color: #9a40a4;
 }
 
-/* FIN RESET ERIC MAYER  */
+#zoning-7 section {
+    height: 600px;
+    margin: 20px;
+    background-color: pink;
+}
+
+.a, .b, .c, .d {
+    width: 50%;
+    float: left;
+    height: 300px;
+}
+
+.a {
+    background-color: #40a497;
+}
+
+.b {
+    background-color:#d69f1b;
+}
+
+.c {
+    background-color:#b1b2d8;
+}
+
+.d {
+    background-color:#1217f2;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    height: 40px;
+    background-color: #40a497;
+}
+

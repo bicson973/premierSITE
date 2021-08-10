@@ -1,52 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>	
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche. Cette balise, parmis d'autres sera utile au referencement naturel -->
-		<meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021">
-		<!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
-		<meta name="keywords" content="premier site, colombbus, suresnes, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique">
-		<!-- l'auteur de la page -->
-		<meta name="author" content="Bicson Saint germain">
-		<script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
-		<title>Mon premier site en HTML 5 et CSS 3 - Accueil</title>
-		<!-- les google fonts anton, Lemonada,Oswald -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021"> <!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche utile au référencement naturel -->
+		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique"> <!-- "Les mots-clefs" utiles pour les moteurs de recherche -->
+		<meta name="author" content="Bicson Saint germain"> <!-- Auteur de la page -->
+        <script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
+        <title>Mon premier site en HTML 5 et CSS 3 - Accueil</title> <!-- Titre du document qui s'affiche dans la barre de titre du navigateur -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
-		<!-- feuille style du site -->
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<!-- bien indenté son code c'est s'assurer de la bonne imbrication des balises et augmenter la lisibilité du code -->
-		<!-- en-tête de la page -->
-		<header>
-		<div id="logo"> 
-			<!-- Le bouton et le lien vers l'ancre #logo -->
-			<a href="#logo">
-				<button type="button"><i class="fas fa-arrow-circle-up"></i></button>
-			</a>
-			<img src="img/logo.png" alt="logo html 5 et CSS 3">
-		</div>
-		<div id="slogan">
-			<a href="index.html">
-			<h1>Mon premier site en HTML 5 et CSS 3</h1>
-			</a>
-		</div>
-		<div id="social">
-			<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="" target="_blank"><i class="fab fa-instagre"></i></a>
-			<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
-		</div>
-		<div class="clear"></div>
-		</header>
-		<!-- fin header -->
-		<!-- navigation principale -->	
-		<nav>
-			<div>
-				<!-- zone du men avec des liens simples pour faire notre menu -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> <!-- les google fonts anton, Lemonada, Oswald -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Feuille de style CSS externe pour la mise en forme du site -->
+		<!-- Bien indenté son code c'est s'assurer de la bonne imbrication des balises et augmente la lisibilité du code -->
+    </head>
+	<body> <!-- L'élément HTML <body> représente le contenu principal du document HTML. Il ne peut y avoir qu'un élément <body> par document -->
+		<header> <!-- L'élément HTML <header> représente l'en-tête de la page aidant à la navigation. Il peut contenir des éléments de titre, logo, un formulaire de recherche, etc -->
+			<div id="logo"> <!-- L'élément HTML <div> (ou division) est le conteneur générique de contenu du flux. L'attribut universel "id" définit un identifiant qui doit être unique pour l'ensemble du document, il sert à identifier un élément lorsqu'on crée un lien, qu'on souhaite le manipuler avec un script ou qu'on souhaite le mettre en forme avec CSS -->		
+				<a href="#logo"> <!-- L'élément HTML <a> (Ancre), avec son attribut href, sert à crée un lien hypertexte vers des pages web, des fichiers, des adresses e-mail, des emplacements se trouvant dans la même page -->
+					<button type="button"><i class="fas fa-arrow-circle-up"></i></button> <!-- Le bouton et le lien vers l'ancre #logo permet de remonter vers l'en-tête de la page en cliquant sur la flèche -->
+				</a>
+				<img src="img/logo.png" alt="logo html 5 et CSS 3"> <!-- L'élément HTML <img> intègre une image dans le document, il faut que la source "le chemin" soit placé correctement dans un dossier pour que l'image s'affiche -->
+			</div>
+			<div id="slogan">
+				<a href="index.html"> 
+				<h1>Mon premier site en HTML 5 et CSS 3</h1> <!-- Les éléments <h1> à <h6> représentent six niveaux de titres dans un document, <h1> est le plus important et <h6> est le moins important. -->
+				</a>
+			</div>
+			<div id="social">
+				<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Target blank ouvre un nouvel onglet lorsqu'on click sur le lien -->
+				<a href="" target="_blank"><i class="fab fa-instagre"></i></a>
+				<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+			</div>
+			<div class="clear"></div> <!-- L'attribut universel class indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments, via CSS ou JavaScript. La div class clear sert à rétablir le flux hierarchique de la page html, il faut le rajouter dans le CSS -->
+		</header> 
+		<nav> <!-- Début de navigation principale : L'élément HTML <nav> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.) -->
+			<div> <!-- Zone avec des liens simples pour faire un menu -->
 				<a href="index.html" title="HTML 5 CSS 3 - Accueil" class="active">Accueil</a>
 				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
 				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
@@ -61,19 +51,15 @@
 				<a href="animation.html" title="HTML 5 CSS 3 - Animation">Animation</a>
 				<a href="récapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
 			</div>
-		</nav>
-		<!-- fin nav -->
-		<!-- Contenu principal -->
-		<main>
-		<!-- aside : la barre latérale de la section principale -->
-			<aside>
+		</nav> 
+		<main> <!-- Contenu principal : L’élément HTML <main> représente le contenu majoritaire du <body> du document -->
+			<aside> <!-- L'élément <aside> (« aparté ») : la barre latérale de la section principale. Les apartés sont fréquemment présents sous la forme d'encadrés ou de boîtes de légende -->
 				<h2>La Page d'accueil</h2>
-				<p>ici, la balise <code>&lt;aside&gt;</code> mais il n'ya que ce paragraphe</p>
+				<p>ici, la balise <code>&lt;aside&gt;</code> mais il n'ya que ce paragraphe</p> <!-- L'élément HTML <p> représente un paragraphe de texte. Les paragraphes sont des éléments blocs. -->
 				<p>Et cette phrase dans laquelle je vous donne le raccourci pour ouvrir un fichier dans le logiciel <kbd>CTRL+O</kbd>.</p>
 			</aside>
-			<section id="Accueil">
-				<!-- div : zone supplémentaire de contenu -->
-				<div>
+			<section id="Accueil"> <!-- L'élément HTML <section> représente une section générique d'un document, par exemple un groupe de contenu thématique. Une section commence généralement avec un titre. -->
+				<div> <!-- div : zone supplémentaire de contenu -->
 					<h2>ici un titre de niveau 2</h2>
 					<p>ici le contenu principal, un p dans la balise <code>&lt;section&gt;</code></p>
 					<h3>ici un titre de niveau 3</h3>
@@ -81,21 +67,16 @@
 					<h5>ici un titre de niveau 5</h5>
 					<h6>ici un titre de niveau 6</h6>
 				</div>
-				<!-- span : zone supplémentaire de contenu, span est une balise in-line-->
-					<h2>ici un titre de <span>niveau 2 dans span</span></h2>
-				<!-- Article : zone supplémentaire de contenu --> 
-				<article> 
+					<h2>ici un titre de <span>niveau 2 dans span</span></h2> <!-- span : zone supplémentaire de contenu, span est une balise in-line -->
+				<article> <!-- Article : zone supplémentaire de contenu -->
 					<h2>ici un titre de niveau dans un article</h2>
 					<a href="#">Récap points CSS</a> - <a href="texte.html">Récap texte HTML</a>
 				</article> 
 			</section>
 			<div class="clear"></div>
 		</main>
-		<!-- fin main -->
-		<!-- pied de page -->
-		<footer>
+		<footer> <!-- L'élément HTML <footer> représente le pied de page. Un élément <footer> contient habituellement des informations sur l'autrice ou l'auteur de la section, les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation. -->
 			<p>&copy; L'agence Suresnes - 2021 </p>
 		</footer> 
-		<!-- fin footer -->
 	</body> 
 </html>

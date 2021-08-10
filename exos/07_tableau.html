@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021">
+        <!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche. Cette balise, parmis d'autres sera utile au referencement naturel -->
+	    <meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, contact, tableau, Bicson saint germain, developpeur-intégrateur technique">
+        <!-- les mots-clefs : utiles pour les moteurs de recherche, bien moins utilisés de nos jours -->
+        <meta name="author" content="Bicson Saint germain">
+        <title>Contact Groupe Colombbus - Tableau</title>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+            }
+
+            main {
+                margin: 0 auto;
+                width: 80%;
+                padding: 10px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            table.adresses {
+                margin: 0 auto;
+                width: 80%;
+                padding: 10px;
+                border-collapse: collapse;
+            }
+
+            table.adresses, .adresses td {
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            .adresses caption {
+                background-color: rgb(111, 196, 224);
+                height: 60px;
+                /* line-height: hauteur de ligne identique à la hauteur du parent, a pour effet de centrer verticalement; */
+                line-height: 60px;
+            }
+
+            .adresses p {
+                margin: 0;
+            }
+
+            .adresses thead {
+                background-color: rgb(108, 123, 128);
+                font-weight: bold;
+            }
+
+            .adresses td {
+                padding: 10px;
+            }
+
+            .adresses tr:nth-child(odd) {
+                background-color: mediumaquamarine;
+            }
+
+            .adresses tr:nth-child(even) {
+                background-color: lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Tableau HTML mes magasins préférés</h1>
+            <table class="adresses">
+                <!-- Sert à faire un tableau -->
+                <caption><p>Adresses // Fournisseurs</p></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Cie</th>
+                        <th scope="col">Contacts</th>
+                        <th scope="col">Adresses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Le pain des amis</td>
+                        <td>Maria Duroc</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>Los vinos buenos</td>
+                        <td>José Santos</td>
+                        <td>Espagne</td>
+                    </tr>
+                    <tr>
+                        <td>Kangoroo and cie</td>
+                        <td>Mike Mendel</td>
+                        <td>Australie</td>
+                    </tr>
+                    <tr>
+                        <td>Twinnings</td>
+                        <td>Helen Spike</td>
+                        <td>Royaume-Uni</td>
+                    </tr>
+                    <tr>
+                        <td>Cycles Laurent</td>
+                        <td>Pierre Laurent</td>
+                        <td>France</td>
+                    </tr>
+                    <tr>
+                        <td>Santini</td>
+                        <td>Jacomo Santini</td>
+                        <td>Italie</td>
+                    </tr>
+                </tbody>
+            </table>
+        <hr>
+        <caption>Un autre tableau avec des balises th</caption>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">IDENTIFIANT</th>
+                        <th scope="col">NOMS</th>
+                        <th scope="col">PRENOMS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>N°1</td>
+                        <td>Chirac</td>
+                        <td>Jacques</td>
+                    </tr>
+                    <tr>
+                        <td>N°2</td>
+                        <td>Jospin</td>
+                        <td>Lionel</td>
+                    </tr>
+                    <tr>
+                        <td>N°3</td>
+                        <td>Mouse</td>
+                        <td>Mickey</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>

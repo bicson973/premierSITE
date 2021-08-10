@@ -47,26 +47,71 @@ table {
 	border-spacing: 0;
 }
 
-/* fin reset eric mayer */
+/* fin reset  */
 
-body{
-    background-color: lightslategrey;
+body {
+    background-color: #eee8aa;
 }
 
-h1{
-    background-color: salmon;
+main {
+    width: 1000px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: pink;
+    text-align: center;
+    color: white;
 }
 
-h2{
-    background-color: seagreen;
+header {
+    width: 1000px;
+    height: 60px;
+    background-color: #40a497;
 }
 
-h3{
-    background-color: silver;
+nav {
+    width: 1000px;
+    height: 30px;
+    background-color: #9a40a4;
 }
 
-p{
-    background-color: whitesmoke;
+section {
+    width: 49%;
+    float: left;
+    height: 250px;
 }
 
-/* FIN RESET ERIC MAYER  */
+.zone-a {
+    background-color: #40a497;
+    margin-left: 10px;
+    margin-top: 10px
+}
+
+.zone-b {
+ 
+    background-color:#d69f1b;
+    margin-right: 10px;
+    margin-top: 10px
+}
+
+.zone-c {
+ 
+    background-color:#b1b2d8;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.zone-d {
+    background-color:#1217f2;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+footer {
+    width: 1000px;
+    height: 40px;
+    background-color: #40a497;
+}
+
