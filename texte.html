@@ -4,39 +4,38 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021"> <!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche utile au référencement naturel -->
-		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique"> <!-- "Les mots-clefs" utiles pour les moteurs de recherche -->
-		<meta name="author" content="Bicson Saint germain"> <!-- Auteur de la page -->
+        <meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021"> 
+		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique"> 
+		<meta name="author" content="Bicson Saint germain"> 
         <script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
-        <title>Mon premier site en HTML 5 et CSS 3 - Texte</title> <!-- Titre du document qui s'affiche dans la barre de titre du navigateur -->
+        <title>Mon premier site en HTML 5 et CSS 3 - Texte</title> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> <!-- les google fonts anton, Lemonada, Oswald -->
-		<link rel="stylesheet" href="css/style.css"> <!-- Feuille de style CSS externe pour la mise en forme du site -->
-		<!-- Bien indenté son code c'est s'assurer de la bonne imbrication des balises et augmente la lisibilité du code -->
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css"> 
     </head>
-	<body> <!-- L'élément HTML <body> représente le contenu principal du document HTML. Il ne peut y avoir qu'un élément <body> par document -->
-		<header> <!-- L'élément HTML <header> représente l'en-tête de la page aidant à la navigation. Il peut contenir des éléments de titre, logo, un formulaire de recherche, etc -->
-			<div id="logo"> <!-- L'élément HTML <div> (ou division) est le conteneur générique de contenu du flux. L'attribut universel "id" définit un identifiant qui doit être unique pour l'ensemble du document, il sert à identifier un élément lorsqu'on crée un lien, qu'on souhaite le manipuler avec un script ou qu'on souhaite le mettre en forme avec CSS -->		
-				<a href="#logo"> <!-- L'élément HTML <a> (Ancre), avec son attribut href, sert à crée un lien hypertexte vers des pages web, des fichiers, des adresses e-mail, des emplacements se trouvant dans la même page -->
-					<button type="button"><i class="fas fa-arrow-circle-up"></i></button> <!-- Le bouton et le lien vers l'ancre #logo permet de remonter vers l'en-tête de la page en cliquant sur la flèche -->
+	<body> 
+		<header> <!-- En-tête de page -->
+			<div id="logo"> 		
+				<a href="#logo"> 
+					<button type="button"><i class="fas fa-arrow-circle-up"></i></button> 
 				</a>
-				<img src="img/logo.png" alt="logo html 5 et CSS 3"> <!-- L'élément HTML <img> intègre une image dans le document, il faut que la source "le chemin" soit placé correctement dans un dossier pour que l'image s'affiche -->
+				<img src="img/logo.png" alt="logo html 5 et CSS 3"> 
 			</div>
 			<div id="slogan">
 				<a href="index.html"> 
-				<h1>Mon premier site en HTML 5 et CSS 3</h1> <!-- Les éléments <h1> à <h6> représentent six niveaux de titres dans un document, <h1> est le plus important et <h6> est le moins important. -->
+				<h1>Mon premier site en HTML 5 et CSS 3</h1> 
 				</a>
 			</div>
 			<div id="social">
-				<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a> <!-- Target blank ouvre un nouvel onglet lorsqu'on click sur le lien -->
+				<a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a> 
 				<a href="" target="_blank"><i class="fab fa-instagre"></i></a>
 				<a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
 			</div>
-			<div class="clear"></div> <!-- L'attribut universel class indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments, via CSS ou JavaScript. La div class clear sert à rétablir le flux hierarchique de la page html, il faut le rajouter dans le CSS -->
+			<div class="clear"></div> 
 		</header>	
-		<nav> <!-- Début de navigation principale : L'élément HTML <nav> représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.) -->
-			<div> <!-- Zone avec des liens simples pour faire un menu -->
+		<nav> <!-- Naviguation Principal -->
+			<div> 
 				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
 				<a href="texte.html" title="HTML 5 CSS 3 - Texte" class="active">Texte</a>
 				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
@@ -52,36 +51,31 @@
 				<a href="récapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
 			</div>
 		</nav> 
-		<main>
+		<main> <!-- Contenu Principal -->
 			<aside>
+
 			</aside>
 			<section>
 				<div>
-					<h2>Texte - <i class="fab fa-fonticons-fi"></i> </h2>
-					<cite><mark><q> Nous prenons pas au serieux il n'y aura aucun survivants !</q> - Alphonse Allais</mark></cite> <!-- cite : pour une citation courte -->
-					<blockquote> <!-- blockquote la citation longue -->
+					<h2>Texte - <i class="fab fa-fonticons-fi"></i> </h2> <!-- L'élément HTML <i> représente un morceau de texte qui se différencie du texte principal. Cela peut par exemple être le cas pour des termes techniques, des phrases dans une langue étrangère ou encore l'expression des pensées d'un personnage. Le contenu de cet élément est généralement affiché en italique. -->
+					<cite><mark><q> Nous prenons pas au serieux il n'y aura aucun survivants !</q> - Alphonse Allais</mark></cite> <!-- L'élément HTML <mark> représente un texte marqué ou surligné à cause de sa pertinence dans le contexte. Il peut par exemple être utilisé afin d'indiquer les correspondances d'un mot-clé recherché au sein d'un document. --> 
+					<!-- L'élément <cite> contient le titre d'une œuvre telle qu'un livre, une chanson, un film, une sculpture… Cet élément doit inclure le titre de l'œuvre. Cette référence peut-être abrégée en accord avec les conventions d'usages pour l'ajout des métadonnées de citations. --> 
+					<blockquote> 
 						<i class="fas fa-quote-left"></i>
 						je me suis couché de bonne heure. Parfois, à peine ma bougie éteinte, mes yeux se fermaient si vite que je n’avais pas le temps de me dire : « Je m’endors. » Et, une demi-heure après, la pensée qu’il était temps de chercher le sommeil m’éveillait ; je voulais poser le volume que je croyais avoir encore dans les mains et souffler ma lumière ; je n’avais pas cessé en dormant de faire des réflexions sur ce que je venais de lire, mais ces réflexions avaient pris un tour un peu particulier ; il me semblait que j’étais moi-même ce dont parlait l’ouvrage : une église, un quatuor, la rivalité de François Ier et de Charles Quint. Cette croyance survivait pendant quelques secondes à mon réveil ; elle ne choquait pas ma raison mais pesait comme des écailles sur mes yeux et les empêchait de se rendre compte que le bougeoir n’était plus allumé. Puis elle commençait à me devenir inintelligible, comme après la métempsycose les pensées d’une existence antérieure ; le sujet du livre se détachait de moi, j’étais libre de m’y appliquer ou non ; aussitôt je recouvrais la vue et j’étais bien étonné de trouver autour de moi une obscurité, douce et reposante pour mes yeux, mais peut-être plus encore pour mon esprit, à qui elle apparaissait comme une chose sans cause, incompréhensible, comme une chose vraiment obscure. Je me demandais quelle heure il pouvait être ; j’entendais le sifflement des trains qui, plus ou moins éloigné, comme le chant d’un oiseau dans une forêt, relevant les distances, me décrivait l’étendue de la campagne déserte où le voyageur se hâte vers la station prochaine ; et le petit chemin qu’il suit va être gravé dans son souvenir par l’excitation qu’il doit à des lieux nouveaux, à des actes inaccoutumés, à la causerie récente et aux adieux sous la lampe étrangère qui le suivent encore dans le silence de la nuit, à la douceur prochaine du retour1.
 						<i class="fas fa-quote-right"></i>
-					</blockquote>
+					</blockquote> <!-- L'élément HTML <blockquote> (bloc de citation) indique que le texte contenu dans l'élément est une citation longue. Le texte est généralement affiché avec une indentation. Une URL indiquant la source de la citation peut être donnée grâce à l'attribut cite tandis qu'un texte représentant la source peut être donné via l'élément <cite>. -->
 					
-					<p><em>&Agrave; la recherche du temps perdu</em> - <strong>Marcel Proust</strong></p>
-					
+					<p><em>&Agrave; la recherche du temps perdu</em> - <strong>Marcel Proust</strong></p> <!-- L'élément HTML <em> (pour emphase) est utilisé afin de marquer un texte sur lequel on veut insister. Les éléments <em> peuvent être imbriqués, chaque degré d'imbrication indiquant un degré d'insistance plus élevé. --> <!-- L'élément HTML <strong> indique que le texte a une importance particulière ou un certain sérieux voire un caractère urgent. Cela se traduit par un affichage en gras. -->
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tempore exercitationem vero inventore vitae iusto excepturi mollitia. Sequi vero dolorum, adipisci voluptatum ut nemo eligendi explicabo soluta sapiente ipsa dolores?</p>
-					
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium vero perferendis, repudiandae mollitia voluptate, inventore cupiditate molestiae, molestias deserunt obcaecati reiciendis aperiam repellat fugit dolore minima distinctio alias quo!
 					Corporis deleniti aut sunt iure quae aliquid atque, commodi ipsam dolor tenetur non sint earum doloremque ipsum, natus libero est delectus in nesciunt, necessitatibus quas? Autem consectetur natus aperiam ea!
 					Repellendus vel quo natus dignissimos expedita, quam omnis at voluptates veritatis error cum atque enim voluptatem qui magni officia ipsa pariatur sapiente quaerat doloremque fuga? Quasi eveniet laboriosam excepturi numquam?</p>
-
 					<p>Une nouvelle citation, <mark>j'y suis j'y reste</mark> de Mac Mahon.</p>
-
 					<p>Patric a dit : <q>Minutes, papillon !</q></p>
-
 					<p>Einstein a trouvé la formule : <q>E = mc<sup>2</sup></q></p>
-
-					<p>Ce mot est tout : <small>petit</small></p>
+					<p>Ce mot est tout : <small>petit</small></p> <!-- L'élément HTML <small> permet de représenter des commentaires ou des textes à écrire en petits caractères (des termes d'un contrat, des mentions relatives au droit d'auteur, etc.). -->
 				</div>
-				
 				<span>
 
 				</span>
@@ -89,15 +83,9 @@
 
 				</article>
 			</section>
-
 		</main>
-		<!-- fin main -->
-
-		<!-- pied de page -->
-		<footer>
-				<p><p>&copy; L'agence Suresnes 2021- &dollar;&Gbreve; </p>
+		<footer> <!-- pied de page -->
+			<p><p>&copy; L'agence Suresnes 2021- &dollar;&Gbreve; </p>
 		</footer> 
-		<!-- fin footer -->
-
 	</body> 
 </html>
