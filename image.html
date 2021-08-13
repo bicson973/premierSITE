@@ -4,27 +4,19 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche. Cette balise, parmis d'autres sera utile au referencement naturel -->
 		<meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021">
-		<!-- les mots-clefs, utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
 		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique">
-		<!-- l'auteur de la page -->
 		<meta name="author" content="Bicson Saint germain">
 		<script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
 		<title>Mon premier site en HTML 5 et CSS 3 - Les sélecteurs</title>
-		<!-- les google fonts anton, Lemonada,Oswald -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
-		<!-- feuille style du site -->
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-
     <body>
-        <!-- en-tête de la page -->
-		<header>
+		<header> <!-- en-tête de la page -->
             <div id="logo"> 
-                <!-- Le bouton et le lien vers l'ancre #logo -->
                 <a href="#logo">
                     <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
                 </a>
@@ -33,7 +25,7 @@
             <div id="slogan">
                 <a href="index.html">
                 <h1>Mon premier site en HTML 5 et CSS 3</h1>
-            </a>
+                </a>
             </div>
             <div id="social">
                 <a href="https://www.instagram.com/lagencesuresnes/" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -42,12 +34,8 @@
             </div>
             <div class="clear"></div>
         </header>
-        <!-- fin header -->
-        
-        <!-- navigation principale -->	
-		<nav>
+		<nav> <!-- Navigation principale -->
 			<div>
-				<!-- zone du men avec des liens simples pour faire notre menu -->
 				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
 				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
 				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
@@ -63,42 +51,30 @@
 				<a href="récapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
 			</div>
 		</nav>
-		<!-- fin nav -->
-
-        <main>
-            <!-- section 1 -->
-            <section>
+        <main> <!-- Contenu principal  -->
+            <section> 
                 <h2>Les images - <i class="fas fa-image"></i></h2>
             </section>
-            <!-- section 2 -->
-            <section class="img-fond">
+            <section class="img-fond"> <!-- section 2 -->
                 <h3>Une image de fond en CSS - <i class="fas fa-commentalt"></i></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias voluptatem porro inventore iure a alias, dolorum natus consequatur quo facilis soluta repudiandae aperiam ea ad, voluptas nesciunt vitae minus?
                 Harum optio architecto, hic, at inventore ullam illum earum doloremque eveniet suscipit reiciendis laboriosam atque. Optio, atque. Ipsa, eos excepturi! Sit sapiente alias ut nulla tempora eaque facere hic id?, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptas hic illo dolor quibusdam asperiores dignissimos maxime ipsa et tempora, praesentium nostrum aperiam veritatis fugiat, repellat, temporibus recusandae soluta cum!</p>
             </section>
-            <!-- section 3 -->
-            <section>
+            <section> <!-- section 3 -->
                 <h3>Image dans le html</h3>
                 <title>Une Belle image de la Tour Eiffel</title>
                 <img src="img/toureiffel.jpg" alt="la tour eiffel" title="Une belle image de la tour eiffel">
             </section>
-
-            <!-- section 4 -->
-            <section class="au-centre">
+            <section class="au-centre"> <!-- section 4 -->
                 <h3>Image dans le html avec des effets css</h3>
                 <img src="img/golden_gate.jpg" alt="le golden gate" class="img-golden">
                 <img src="img/golden_gate.jpg" alt="le golden gate" class="img-golden">
                 <blockquote>Et pourtant elle tourne ! </blockquote>
                 <img src="img/golden_gate.jpg" alt="le golden gate" class="img-golden rotation-360" >
             </section>
-
         </main>
-
-        <!-- pied de page -->
-		<footer>
+		<footer> <!-- pied de page -->
 			<p>&copy; L'agence Suresnes - 2021 </p>
 		</footer> 
-		<!-- fin footer -->
-    
     </body>
 </html>
