@@ -749,6 +749,102 @@ iframe[allowfullscreen] {
    background-color: rgb(136, 72, 17);
 }
 
+/* Terminer Zoning Lundi 06 */
+
+/* page position */
+
+/* Div autocentrée */
+.centre { 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto; /* Sert à centrer un élément block */
+    background: #6acafc;
+}
+
+
+.absolute { /* div en position absolute */
+    width: 100px; /* Augmente la largeur */
+    height: 100px; /* Augmente la hauteur */
+    background-color: yellow;
+    top: 25%; /* Position à 25% du haut de page */
+    left: 10%; /* Position à 10% de la gauche */
+    position:absolute
+}
+
+
+
+.relative { /* relative au parent dans lequelle se trouve la div, ici la section */
+    width: 400px;
+    height: 400px;
+    background-color: #2980b9;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+
+.relative div { /* Cette div est en position absolute dans un élément relatif et sa position est absolute par rapport à cet élément, l'origine est l'élément parent */
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+
+.bordure-2 {
+    border: 1px solid green;
+}
+
+.trente {
+    font-size: 22px;
+    width: 30%;
+    background:indianred;
+    padding: 20px;
+    color:ivory;
+}
+
+.cinquante {
+    font-size: 22px;
+    width: 50%;
+    background:rgb(177, 22, 22);
+    padding: 20px;
+    color:rgb(255, 255, 255);
+}
+
+.cent {
+    font-size: 22px;
+    width: 100%;
+    background:rgb(133, 54, 54);
+    padding: 20px;
+    color:rgb(255, 255, 255);
+}
+
+.float {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    border: 2px solid darkred;
+    background: #fff1A8;
+    text-align: center;
+    font-size: 25px;
+    float: left;
+}
+
+.dernier-carre {
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    border: 2px solid darkred;
+    background: #fff1A8;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+
+
+
 
 
 

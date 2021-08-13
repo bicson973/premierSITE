@@ -5,28 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="site d'apprentissage du HTML 5 et du CSS 3 - colombbus suresne 2021">
-        <!-- La description : phrase qui s'affiche et décrit le site dans un resultat de moteur de recherche. Cette balise, parmis d'autres sera utile au referencement naturel -->
 		<meta name="keywords" content="premier site, colombbus, suresne, l'agence suresne, lagencesuresne, HTML 5, CSS 3, Bicson saint germain, developpeur technique">
-        <!-- les mots-clefs : utiles pour les moteurs de recherche, bien moins utilisés de nos jours... -->
 		<meta name="author" content="Bicson Saint germain">
-        <!-- l'auteur de la page -->
 		<script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
 		<title>Mon premier site en HTML 5 et CSS 3 - Tableau</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada&family=Oswald&display=swap" rel="stylesheet">
-        <!-- Liens des google fonts anton, Lemonada,Oswald -->
 		<link rel="stylesheet" href="css/style.css">
-        <!-- feuille de style css du site -->
 	</head>
-    <body>
-        <!-------------------- Header = En-tête de page ------------------->
-		<header>
+    <body> 
+		<header> <!-- En-tête de page  -->
             <div id="logo"> 
                 <a href="#logo">
                     <button type="button"><i class="fas fa-arrow-circle-up"></i></button>
                 </a>
-                <!-- Le bouton et le lien vers l'ancre #logo -->
                 <img src="img/logo.png" alt="logo html 5 et CSS 3">
             </div>
             <div id="slogan">
@@ -41,12 +34,8 @@
             </div>
             <div class="clear"></div>
         </header>
-        <!-------------------- Fin de l'en-tête de page ------------------->
-		
-        <!-------------------- Navigation Principale -------------------->
-        <nav>
+		<nav> <!-- Navigation Principale  -->
 			<div>
-			<!-- zone du men avec des liens simples pour faire notre menu -->
 				<a href="index.html" title="HTML 5 CSS 3 - Accueil">Accueil</a>
 				<a href="texte.html" title="HTML 5 CSS 3 - Texte">Texte</a>
 				<a href="selecteur.html" title="HTML 5 CSS 3 - Sélecteur">Sélecteur</a>
@@ -62,29 +51,22 @@
 				<a href="récapitulatif.html" title="HTML 5 CSS 3 - Récapitulatif">Récapitulatif</a>
 			</div>
 		</nav>
-        <!-------------------- Fin de la Nav --------------------> 
         <main>
             <section class="tableau">
                 <h2>Un Tableau - <i class="fas fa-table"></i></h2>
-                <table>
-                <!-- Table = Tableau -->
-                    <caption><i class="fas fa-plane"></i>Vols -> Paris Rome</caption>
-                    <!-- Caption = Légende du tableau -->
-                    <thead>
-                    <!-- L'en-tête du tableau, les en-tête de colonnes -->
-                        <tr>
-                        <!-- tr = table row, les rangées du tableau -->
-                            <td>Jours</td>
+                <table> <!-- L'élément HTML <table> permet de faire un tableau de données. -->
+                    <caption><i class="fas fa-plane"></i>Vols -> Paris Rome</caption> <!-- L'élément <caption> définit la légende (ou le titre) d'un tableau -->
+                    <thead> <!-- L'élément <thead> définit un ensemble de lignes qui définit l'en-tête des colonnes d'un tableau. -->
+                        <tr> <!-- L'élément HTML <tr> définit une ligne de cellules dans un tableau. Une ligne peut être constituée d'éléments <td> (les données des cellules) et <th> (les cellules d'en-têtes). -->
+                            <td>Jours</td> <!-- L'élément HTML <td> définit une cellule d'un tableau qui contient des données. -->
                             <td>Lundi</td>
                             <td>Vendredi</td>
                             <td>Dimanche</td>
-                            <!-- td = table data, les données du tableau, les cellules, le nombre de cellules donne le nombre de colonnes du tableau  -->
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td rowspan="2">Air France</td>
-                            <!-- rowspan fait fusionner la cellule de cette rangée avec celle du dessous -->
+                        <tr> <!-- Raccourcie : tr*4>td*4 -->
+                            <td rowspan="2">Air France</td> <!-- rowspan fait fusionner la cellule de cette rangée avec celle du dessous -->
                             <td>Départ 10h - Arrivée 11h55</td>
                             <td>Départ 15h - Arrivée 17h50</td>
                             <td>Départ 17h - Arrivée 18h55</td>
@@ -105,16 +87,13 @@
                             <td>180 €</td>
                             <td>200 € </td>
                             <td>250 €</td>
-                        </tr>
-                        <!-- tr*4>td*4 = Sert à multiplier les éléments -->
+                        </tr>                     
                     </tbody>
                 </table>
             </section>
         </main>
-        <!-------------------- footer = Pied de page -------------------->
-		<footer>
+		<footer> <!-- Pied de page -->
 			<p>&copy; L'agence Suresnes - 2021 </p>
 		</footer> 
-        <!-------------------- fin footer -------------------->
     </body>
 </html>
