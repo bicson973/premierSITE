@@ -47,26 +47,4 @@ table {
 	border-spacing: 0;
 }
 
-/* fin reset eric mayer */
-
-body{
-    background-color: lightslategrey;
-}
-
-h1{
-    background-color: salmon;
-}
-
-h2{
-    background-color: seagreen;
-}
-
-h3{
-    background-color: silver;
-}
-
-p{
-    background-color: whitesmoke;
-}
-
 /* FIN RESET ERIC MAYER  */

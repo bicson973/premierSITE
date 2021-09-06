@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-/* reset simple  */
-/* l'étoile signifie tout all */
+/* reset simple  */ 
 
-/* Sinon on peut utiliser le reset d'eric mayer qui se touve à cette adresse : https://meyerweb.com/eric/tools/css/reset/ */
-*{
+*{ /* l'étoile signifie tout all */
     box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
@@ -29,53 +27,40 @@ time, mark, audio, video {
 }
 
 /* Fin du reset simple */
+/* Sinon on peut utiliser le reset d'eric mayer qui se touve à cette adresse : https://meyerweb.com/eric/tools/css/reset/ */
 
-/* les styles pour le premier site */
-
-/* les typos google font utilisées dans le site */
-/* Anton, Oswald, Lemonada */
-
-/* font-family: 'Anton', sans-serif; 
-font-family: 'Lemonada', cursive; 
-font-family: 'Oswald', sans-serif; */
+/* Les styles pour le premier site */
+/* les typos google font utilisées dans le site : Anton, Oswald, Lemonada */
+/* font-family: 'Anton', sans-serif; font-family: 'Lemonada', cursive; font-family: 'Oswald', sans-serif; */
 
 body {
     font-family: 'Oswald', sans-serif;
-    /* image de fond */
-    /* chemin depuis le fichier style.css; on sort du dossier css puis on rentre dans le dossier img : ../ le chemin pour sortir d'un dossier */
-    background-image: url('../img/concrete-texture.png');
-}
-
-/* il est toujours utile de placer une classe clear pour rétablir si on, fait flotter les éléments avant */
-.clear {
-    clear: both;
+    background-image: url('../img/concrete-texture.png'); /* image de fond : chemin depuis le fichier style.css; on sort du dossier css puis on rentre dans le dossier img : ../ */ 
 } 
-/* La classe clear sert à rétablir le flux */
+
+.clear {
+    clear: both; 
+} 
+/* il est toujours utile de placer une classe clear pour rétablir si on, fait flotter les éléments /* La classe clear sert à rétablir le flux */
 
 /* les titres du site */
 h1 {
-    font-family: 'Anton', sans-serif;
-    /* taille de typo */
-    font-size: 40px;
-    /* espacement entre les lettres */
-    letter-spacing: 1px;
-    /* couleur réf. héxadécimale */
-    color: #2980b9;
+    font-family: 'Anton', sans-serif; 
+    font-size: 40px; /* taille de typo */
+    letter-spacing: 1px; /* espacement entre les lettres */
+    color: #2980b9; /* couleur réf. héxadécimale */
 }
 
 h2 {
     font-size: 35px;
     color: #2c3e50;
-    /* épaisseur des caractères */
-    font-weight: bold;
-    /* texte shadow (ombre portée), une propriété qui a besoin de 1 ou plusieurs valeurs */
-    text-shadow: 1px 1px 2px #aaa;
+    font-weight: bold; /* épaisseur des caractères */
+    text-shadow: 1px 1px 2px #aaa; /* texte shadow (ombre portée), une propriété qui a besoin de 1 ou plusieurs valeurs */
 }
 
 /* taille de l'icone dans le h2 */
-/* i enfant de h2 ; l'icone sera 150% plus grande que la taille d'origine */
 h2 i { 
-    font-size: 150%;
+    font-size: 150%; /* i enfant de h2 ; l'icone sera 150% plus grande que la taille d'origine */
 }
 
 h3 {
@@ -109,7 +94,6 @@ blockquote i {
 header {
     height: 175px;
     background-color: #719bc5; 
-
 }
 
 /* Dans le header, les trois zones suivantes flottent toutes les trois à gauche elles int une largeur en %, donc une largeur reatives à l'élément parent donc header */
@@ -543,7 +527,6 @@ ancre a:hover {
     width: 100%;
 }
 
-
 #menu-deroulant nav li {
     background: #ccc;
 }
@@ -761,7 +744,6 @@ iframe[allowfullscreen] {
     background: #6acafc;
 }
 
-
 .absolute { /* div en position absolute */
     width: 100px; /* Augmente la largeur */
     height: 100px; /* Augmente la hauteur */
@@ -770,8 +752,6 @@ iframe[allowfullscreen] {
     left: 10%; /* Position à 10% de la gauche */
     position:absolute
 }
-
-
 
 .relative { /* relative au parent dans lequelle se trouve la div, ici la section */
     width: 400px;
@@ -839,6 +819,233 @@ iframe[allowfullscreen] {
     text-align: center;
     font-size: 25px;
 }
+
+/* La page animation */
+
+.info-bulle {
+    width: 500px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #444;
+}
+
+.info-bulle p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info-bulle a {
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: lightgrey;
+    text-decoration: none;
+    text-shadow: 0 -2px 0 black;
+}
+
+.info-bulle a:hover {
+    background-color: rgb(62, 152, 179);
+    text-shadow: 0 1px 2px black;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.info-bulle a span {
+    position: absolute;
+    padding: 15px;
+    opacity: 0;
+    margin-top: 23px;
+    margin-left: -35px;
+    background-color: rgba(0, 0, 0, .9);
+    color: #09c;
+    transition: .25s;
+
+    transform: scale(0) rotateZ(-12deg);
+    border-radius: 13px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+.info-bulle a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+
+.info-bulle a span:before {
+    content: 'V';
+    position: absolute;
+    top: -5px;
+    left: -1px;
+}
+
+.img-effets {
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+
+.img-effets li {
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+
+.img-effets li:nth-child(3) {
+    clear: both;
+}
+
+.img-effets img {
+    position: absolute;
+    z-index: 1; /* Les images sont empiler en bas  */
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    transition: .5s cubic-bezier(0,3,4,1); /* La transition fonctionne avec un transform sur le hover du li */
+}
+
+.img-effets li:hover img {
+    z-index: 2; /* Lorsqu"on passe la souris sur Les images, elles passent en premier plan avec le z-index 2 */
+    transform: scale(1.5); /* Transform peut fonctionner sans transition  */
+    box-shadow: 0 0 10px black;
+}
+
+.img-effets:hover li:not(:hover) img {
+    filter: grayscale(1) blur(2px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ZONING-08 */
+
+#zoning-08 {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* En-tête */
+#zoning-08 header {
+    height: 200px;
+}
+
+#zoning-08 .haut-1 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #ff6347;
+}
+
+#zoning-08 .haut-2 {
+    width: 50%;
+    float: left;
+    height: 100%;
+    background-color: #008080;
+}
+
+#zoning-08 .haut-3 {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background-color: #40e0d0;
+}
+
+/* Naviguation */
+#zoning-08 nav {
+    height: 100px;
+    background-color: #add8e6;
+    border: none;
+}
+
+/* Zone latéral */
+#zoning-08 aside {
+    width: 25%;
+    float: left;
+    height: 500px;
+    background-color: #d8bfd8;
+}
+
+#zoning-08 section {
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+}
+
+/* zone principale */
+
+#zoning-08 .zone-a {
+    float: left;
+    height: 200px;
+    width: 50%;
+    background-color: #f5deb3;
+}
+
+#zoning-08 .zone-b {
+    float: left;
+    height: 200px;
+    width: 50%;
+    background-color: #f5f5f5;
+}
+
+/* zone du diaporama */
+#zoning-08 .diaporama {
+    height: 200px;
+    background-color: #a3de83;
+}
+
+#zoning-08 .zone-c {
+    float: left;
+    height: 100px;
+    width: 25%;
+    background-color: #32ff32;
+}
+
+#zoning-08 .zone-d {
+    float: left;
+    height: 100px;
+    width: 25%;
+    background-color: #e032ff;
+}
+
+#zoning-08 .zone-e {
+    float: left;
+    height: 100px;
+    width: 25%;
+    background-color: #ffa632;
+}
+
+#zoning-08 .zone-f {
+    float: left;
+    height: 100px;
+    width: 25%;
+    background-color: #ff3265;
+}
+
+.z8 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+
+
+
 
 
 
