@@ -1,3 +1,5 @@
+/* Feuille de style 10 voillier - bicson */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,3 +50,82 @@ table {
 }
 
 /* FIN RESET ERIC MEYER  */
+
+body {
+    
+    background-color: #fff;
+    color: #333;
+}
+
+/* CONTENU PRINCIPAL */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* En-tête de page  */
+header {
+    height: 150px;
+    background-color: #98bdee;
+}
+
+/* Nav */
+nav {
+    height: 100px;
+    background-color: #bfbfdb;
+}
+
+div {
+    background-color: #ebcdd2;
+}
+
+/* section principal */
+section {
+    text-align: center;
+}
+
+figure { 
+    display: inline-block;
+    padding: 30px 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+figcaption {
+    opacity: 0.8;
+    background-color: #333;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    position:relative;
+    bottom: 25px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.galerie {
+    margin-left: 25%;
+}
+
+.photo {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    height: 60px;
+    background-color: #98bdee;
+}
+
+p {
+    margin: 0 auto;
+}
