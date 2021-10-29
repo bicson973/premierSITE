@@ -29,68 +29,68 @@ time, mark, audio, video {
 
 /* feuille de style pour la page de l'espagne */
 
-body{
+body {
     /* Pour retrouver une image dans un sous-dossier mettre -> ../../ */
     background-image: url('../../img/concrete-texture.png')
 }
 
-header{
+header {
     background-color:chocolate;
     color: lightsteelblue;
 }
 
-
-nav{
+nav {
     background-color:whitesmoke;
 }
 
-main{
+main {
     background-color: #fff;
     width: 1200px;
     margin: 0 auto;
     height: 600px;
 }
 
-footer{
+footer {
     background-color:lightgrey;
     color: white;
 }
 
-h1{
+h1 {
     background-color:whitesmoke;
     text-align: center;
 }
 
-h2{
+h2 {
     background-color: powderblue;
 }
 
-article{
+article {
     width: 800px;
     float: left;
 }
 
-aside{
+aside {
     width: 400px; 
     float: left;
 }
 
 .clear {
     clear: both;
+    /* La propriété clear indique si un élément peut être situé à côté d'éléments flottants qui le précèdent ou s'il doit être déplacé vers le bas pour être en dessous de ces éléments. La propriété clear s'applique aux éléments flottants comme aux éléments non-flottants. */
 }
 
-#menu-haut{
+#menu-haut {
     width: 1200px;
     margin: 0 auto;
 }
 
-#menu-haut ul{
+#menu-haut ul {
     background-color: #fff;
     width: 760px;
     float: left;
 }
 
-form{
+form {
     background-color: red;
     width: 400px;
     float: left;
