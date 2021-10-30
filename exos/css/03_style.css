@@ -28,21 +28,19 @@ h1, h2,h3 {
     color: lightslategray;
 }
 
-p{ 
+p { 
     background-color: #fff;
 }
 
-/* pour cibler l'élément qui a l'id "travail" j'ecris #travail */
-/* pour déclarer un nouveau id on précède le nom de l'id du caractère dièse */
 #travail {
+/* On utilise "dièse" pour déclarer un id dans une feuille CSS. " # " permet de cibler id="travail" qui se trouve dans le document HTLM */
     background-color: black;
     color: white;
-
 }
 
-/* pour cibler le ou les éléments qui ont la class "vacance" j'écris .vacances */
-/* pour déclarer une classe on précède le nom de la class d'un point */
-.vacances{
+.vacances {
+/* On utilise le point ( . ) pour déclarer une class dans une feuille CSS. ( .vacances ) permet de cibler class="vacances" qui se trouve dans le document HTLM. */
     font-style: italic; 
+    /* La propriété font-style permet de sélectionner une fonte italic ou oblique parmi celles listées par font-family. */
     color: blue;
 }
